@@ -1,4 +1,6 @@
 #  bhyve-cloudfunction
+[This is a WIP and does not currently function]
+
 This app is designed to subscribe to the Orbit B-Hyve API and send requests to the B-Hyve after receiving HTTP requests and is currently a work in progress. Any help is greatly appreciated.
 
 At this point, status and device information should be populated.
