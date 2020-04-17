@@ -1,10 +1,10 @@
-#  bhyve-mqtt
-This app is designed to subscribe to the Orbit B-Hyve API and broadcast the messages out over MQTT topics and is currently a work in progress. Any help is greatly appreciated.
+#  bhyve-cloudfunction
+This app is designed to subscribe to the Orbit B-Hyve API and send requests to the B-Hyve after receiving HTTP requests and is currently a work in progress. Any help is greatly appreciated.
 
 At this point, status and device information should be populated.
 
 ## To Do
-- Handle commands from MQTT to Orbit API (start/stop watering, settings schedules, etc...)
+- Handle commands from HTTP to Orbit API (start/stop watering, settings schedules, etc...)
 
 ## Usage
 
@@ -20,12 +20,7 @@ npm start
 
 | key                  | description                                                                |
 |----------------------|----------------------------------------------------------------------------|
-| MQTT_BROKER_ADDRESS  | MQTT broker URL (eg. `mqtt://localhost:1883`)                              |
 | ORBIT_EMAIL          | Broker user                                                                |
-| MQTT_PASSWORD        | Broker password                                                            |
-| MQTT_UPDATE_TOPIC    | Broker topic for realtime updates from AmbientWeather                      |
-| MQTT_CONNECT_TOPIC   | Broker topic for initial connections to the AmbientWeather Realtime socket |
-| MQTT_SUBSCRIBE_TOPIC | Broker topic for successful subscription to the realtime API               |
 
 
 ## MQTT Schema
