@@ -61,6 +61,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# yaml file
+cloudfunction.env
+
 # next.js build output
 .next
 
