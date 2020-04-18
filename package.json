@@ -1,25 +1,24 @@
 {
-  "name": "bhyve-mqtt",
+  "name": "bhyve-cloudfunction",
   "version": "0.1.0",
-  "description": "A MQTT gateway for the unofficial Orbit B-Hyve API indended for use with HomeAssistant",
-  "main": "app.js",
+  "description": "A Cloud Function gateway for the unofficial Orbit B-Hyve API indended for use with HomeAssistant",
+  "main": "index.js",
   "keywords": [
     "orbit bhyve",
     "homeassistant",
-    "mqtt"
+    "cloud function"
   ],
   "scripts": {
-    "start": "node -r dotenv/config app.js dotenv_config_path=./.env",
+    "start": "node -r dotenv/config index.js dotenv_config_path=./.env",
     "cleanmac": "find . -name '.DS_Store' -type f -delete",
     "standard": "standard --verbose --fix"
   },
-  "author": "bill church",
+  "author": "tj madsen",
   "license": "MIT",
   "dependencies": {
     "ajv": "^6.11.0",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "mqtt": "^3.0.0",
     "ws": "^7.2.1"
   },
   "devDependencies": {
